@@ -69,17 +69,20 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_scss__);
 
 
 function component() {
-    var element = document.createElement('div');
+    var element = document.createElement('p');
     element.classList.add('hello');
+    element.textContent="Hello, World!";
     return element;
   }
 
-document.getElementById("container").appendChild(component());
+window.addEventListener("load", function() {
+    document.getElementById("container").appendChild(component());
+});
 
 
 /***/ }),
@@ -103,8 +106,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!./style.css", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!./style.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js??ref--0-2!./style.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js??ref--0-2!./style.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -122,7 +125,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".hello {\r\n    color: #f00;\r\n}\r\n\r\n#container {\r\n    width: 100px;\r\n    height: 100px;\r\n    background-color: #00f;\r\n}", ""]);
+exports.push([module.i, ".hello {\n  color: #fff; }\n\n#container {\n  width: 100px;\n  height: 100px;\n  background-color: #00f; }\n", ""]);
 
 // exports
 

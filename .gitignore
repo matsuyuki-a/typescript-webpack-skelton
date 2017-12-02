@@ -59,4 +59,4 @@ typings/
 
 lib/
 .node-version
-debug
+debug/

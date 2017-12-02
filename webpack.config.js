@@ -1,25 +1,28 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "lib")
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"]
+  },
   module: {
     rules: [
       {
+        test: /\.tsx?/,
+        use: [{ loader: "ts-loader" }],
+        exclude: /node_modules/
+      },
+      {
         test: /\.scss$/,
-        use: [{
-          loader: "style-loader"
-      }, {
-          loader: "css-loader"
-      }, {
-          loader: "sass-loader",
-          options: {
-              includePaths: ["absolute/path/a", "absolute/path/b"]
-          }
-      }]
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "sass-loader" }
+        ]
       }
     ]
   }

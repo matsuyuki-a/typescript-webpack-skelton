@@ -24,7 +24,7 @@
   "devDependencies": {
     "css-loader": "^0.28.7",
     "http-server": "^0.10.0",
-    "node-sass": "^4.7.1",
+    "node-sass": "4.6.1",
     "sass-loader": "^6.0.6",
     "shelljs": "^0.8.1",
     "shx": "^0.2.2",

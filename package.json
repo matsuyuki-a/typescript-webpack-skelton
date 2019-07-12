@@ -23,7 +23,7 @@
   "homepage": "https://github.com/rmn31415/typescript-webpack-skelton#readme",
   "devDependencies": {
     "css-loader": "^0.28.7",
-    "http-server": "^0.10.0",
+    "http-server": "^0.11.1",
     "node-sass": "4.6.1",
     "sass-loader": "^6.0.6",
     "shelljs": "^0.8.1",

@@ -26,7 +26,7 @@
     "http-server": "^0.11.1",
     "node-sass": "4.6.1",
     "sass-loader": "^6.0.6",
-    "shelljs": "^0.8.1",
+    "shelljs": "^0.8.3",
     "shx": "^0.2.2",
     "style-loader": "^0.23.1",
     "ts-loader": "^3.2.0",
